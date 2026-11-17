@@ -1,0 +1,62 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+#   _________ __                 _____.__       .__       .___
+#  /   _____//  |______ ________/ ____\__| ____ |  |    __| _/
+#  \_____  \\   __\__  \\_  __ \   __\|  |/ __ \|  |   / __ | 
+#  /        \|  |  / __ \|  | \/|  |  |  \  ___/|  |__/ /_/ | 
+# /_______  /|__| (____  /__|   |__|  |__|\___  >____/\____ | 
+#         \/           \/                     \/           \/ 
+# Starfield — Constellation NASA-Punk Light Palette
+
+$GTK_THEME = Catppuccin-Latte
+$ICON_THEME = Starfield-Icons
+$COLOR_SCHEME = prefer-light
+$CODE_THEME = Wallbash
+
+exec = gsettings set org.gnome.desktop.interface icon-theme $ICON_THEME
+exec = gsettings set org.gnome.desktop.interface gtk-theme $GTK_THEME
+exec = gsettings set org.gnome.desktop.interface color-scheme $COLOR_SCHEME
+
+general {
+    gaps_in = 5
+    gaps_out = 10
+    border_size = 2
+    col.active_border = rgba(B72B3CFF) rgba(DE6B35FF) rgba(D3A54FFF) rgba(2E5A88FF) 45deg
+    col.inactive_border = rgba(485B7366) rgba(8C9BAE44) 45deg
+    layout = dwindle
+    resize_on_border = true
+}
+
+group {
+    col.border_active = rgba(B72B3CFF) rgba(DE6B35FF) rgba(D3A54FFF) rgba(2E5A88FF) 45deg
+    col.border_inactive = rgba(485B7366) rgba(8C9BAE44) 45deg
+    col.border_locked_active = rgba(2E5A88FF) rgba(D3A54FFF) 45deg
+    col.border_locked_inactive = rgba(485B7366) rgba(8C9BAE44) 45deg
+}
+
+decoration {
+    rounding = 10
+
+    shadow {
+        enabled = true
+        range = 18
+        render_power = 3
+        offset = 0 4
+        color = rgba(1B263B28)
+        color_inactive = rgba(1B263B14)
+    }
+
+    blur {
+        enabled = yes
+        size = 6
+        passes = 3
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+        noise = 0.015
+        contrast = 1.05
+        brightness = 1.03
+        vibrancy = 0.18
+    }
+}
+
+layerrule = blur,waybar

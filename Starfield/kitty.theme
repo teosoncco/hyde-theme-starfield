@@ -1,0 +1,60 @@
+$HOME/.config/kitty/theme.conf|killall -SIGUSR1 kitty
+
+# ═══════════════════════════════════════════════════════════════════════
+# STARFIELD — CHRONOMARK SLATE CONSOLE (Kitty Theme)
+# Hybrid NASA-Punk Console: Aerospace Slate (#3E5068) + Lunar Alabaster (#F4F1EA)
+# Optimized for TUI legibility (nvim, herdr, agy, btop, fastfetch)
+# ═══════════════════════════════════════════════════════════════════════
+
+foreground              #F4F1EA
+background              #3E5068
+selection_foreground    #FFFFFF
+selection_background    #B72B3C
+url_color               #E5B85B
+
+cursor                  #E5B85B
+cursor_text_color       #1B263B
+
+active_border_color     #B72B3C
+inactive_border_color   #D8D0C2
+bell_border_color       #DE6B35
+
+# Tab bar colors (Constellation Ribbon)
+active_tab_foreground   #FFFFFF
+active_tab_background   #B72B3C
+inactive_tab_foreground #EAE4D7
+inactive_tab_background #2B3B52
+tab_bar_background      #1B263B
+tab_bar_margin_color    #1B263B
+
+# black (Deep Vanguard Navy)
+color0   #1B263B
+color8   #788B9F
+
+# red (Constellation Crimson / Solar Flare)
+color1   #DF4A5B
+color9   #F27280
+
+# green (Surveyor Biomes / Aurora Sage)
+color2   #7CC9A2
+color10  #9CE3BE
+
+# yellow (Constellation Gold / Helios)
+color3   #E5B85B
+color11  #F5CF7E
+
+# blue (Astra Blue / Starlight)
+color4   #78A9E0
+color12  #9DC4F2
+
+# magenta (Nebula Rose / Grav Anomaly)
+color5   #DA82A0
+color13  #F0A3BD
+
+# cyan (Cryo Horizon / Scanner Cyan)
+color6   #78CAD9
+color14  #9EE2EE
+
+# white (Lunar Alabaster / Starlight White)
+color7   #EAE4D7
+color15  #FAF8F3

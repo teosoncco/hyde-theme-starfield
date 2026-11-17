@@ -1,0 +1,129 @@
+$HOME/.config/waybar/theme.css|pgrep -x waybar > /dev/null 2>&1 && hyde-shell waybar --update || ${scrDir}/wbarconfgen.sh
+/* ═══════════════════════════════════════════════════════════════════════
+   STARFIELD — CONSTELLATION NASA-PUNK LIGHT MODE (Waybar Theme)
+   Warm Lunar Alabaster (#F4F1EA) + Deep Vanguard Navy (#1B263B)
+   Accents: Crimson (#B72B3C) · Solar (#DE6B35) · Gold (#D3A54F) · Astra (#2E5A88)
+   ═══════════════════════════════════════════════════════════════════════ */
+
+@define-color bar-bg rgba(234, 229, 218, 0.78);
+
+@define-color main-bg #F4F1EA;
+@define-color main-fg #1B263B;
+
+@define-color wb-color #1B263B;
+@define-color wb-act-bg #B72B3C;
+@define-color wb-act-fg #FFFFFF;
+@define-color wb-act-color #FFFFFF;
+
+@define-color wb-hvr-bg #D3A54F;
+@define-color wb-hvr-fg #1B263B;
+@define-color wb-hvr-color #1B263B;
+
+/* ── Chronomark / NASA-Punk Instrument Islands ──────────────────────── */
+#pill,
+#leaf,
+#leaf-inverse,
+#pill-right,
+#pill-left,
+#pill-down,
+#pill-up,
+#pill-in,
+#pill-out {
+    background-image: linear-gradient(180deg, rgba(250, 248, 243, 0.96) 0%, rgba(240, 235, 224, 0.94) 100%);
+    border: 1px solid rgba(27, 38, 59, 0.18);
+    box-shadow: 0 2px 6px rgba(27, 38, 59, 0.08);
+}
+
+/* ── Constellation Active Workspace Ribbon ──────────────────────────── */
+#workspaces button,
+#taskbar button {
+    color: #3D516C;
+    transition: all 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#workspaces button.active,
+#workspaces button.focused,
+#taskbar button.active {
+    background-color: #B72B3C;
+    background-image: linear-gradient(135deg, #B72B3C 0%, #DE6B35 55%, #D3A54F 100%);
+    color: #FFFFFF;
+    box-shadow: 0 1px 5px rgba(183, 43, 60, 0.35);
+}
+
+#workspaces button:hover,
+#taskbar button:hover {
+    background-color: #D3A54F;
+    background-image: linear-gradient(135deg, #EAE2D0 0%, #E5C178 100%);
+    color: #1B263B;
+}
+
+#workspaces button.urgent {
+    background-color: #DE6B35;
+    color: #FFFFFF;
+}
+
+/* ── NASA-Punk Telemetry Module Color Coding ────────────────────────── */
+#custom-hyde-menu,
+#custom-launch_wofi {
+    color: #B72B3C;
+}
+
+#cpu,
+#network,
+#bluetooth,
+#mpris {
+    color: #2E5A88;
+}
+
+#memory,
+#backlight {
+    color: #9E6B1B;
+}
+
+#custom-gpuinfo,
+#temperature,
+#custom-sensorsinfo {
+    color: #C45124;
+}
+
+#battery,
+#pulseaudio,
+#tray,
+#window {
+    color: #1B263B;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #246A4E;
+}
+
+#battery.warning:not(.charging) {
+    color: #C45124;
+}
+
+#battery.critical:not(.charging),
+#custom-power {
+    color: #B72B3C;
+}
+
+/* ── Data Slate Tooltips & Menus ────────────────────────────────────── */
+tooltip,
+menu {
+    background-color: #FAF8F3;
+    background-image: linear-gradient(180deg, #FAF8F3 0%, #F0ECE1 100%);
+    color: #1B263B;
+    border: 1.5px solid #2E5A88;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(27, 38, 59, 0.16);
+}
+
+tooltip label,
+menuitem {
+    color: #1B263B;
+}
+
+menuitem:hover {
+    background-color: #B72B3C;
+    color: #FFFFFF;
+}

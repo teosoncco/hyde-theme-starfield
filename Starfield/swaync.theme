@@ -1,0 +1,178 @@
+${confDir}/swaync/theme.css|${WALLBASH_SCRIPTS}/swaync.sh
+/* ═══════════════════════════════════════════════════════════════════════
+   STARFIELD — CONSTELLATION DATA SLATE (SwayNC Light Mode Theme)
+   Fixes default Wallbash white-on-light text and styles notifications
+   ═══════════════════════════════════════════════════════════════════════ */
+
+@define-color sw-cc-bg #F4F1EA;
+@define-color sw-cc-border-color #B72B3C;
+@define-color sw-noti-bg-hover #EAE3D5;
+@define-color sw-noti-bg-focus-alt #EFECE6;
+@define-color sw-noti-window-bg #FAF8F3;
+@define-color sw-noti-window-br #2E5A88;
+@define-color sw-noti-window-txt #1B263B;
+@define-color sw-noti-border-color #D3A54F;
+@define-color text-color #1B263B;
+@define-color text-color-disabled #64778D;
+
+* {
+    color: @text-color;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.control-center {
+    background: alpha(@sw-cc-bg, 0.94);
+    border: 2px solid @sw-cc-border-color;
+    color: @sw-noti-window-txt;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(27, 38, 59, 0.18);
+}
+
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+    opacity: 1;
+    background: @sw-noti-bg-hover;
+    border-radius: 10px;
+}
+
+.notification-row {
+    outline: none;
+    margin: 4px;
+    padding: 0;
+}
+
+.notification {
+    background: alpha(@sw-noti-window-bg, 0.96);
+    border: 2px solid @sw-noti-window-br;
+    border-radius: 10px;
+    margin: 2px -2px 3px 0px;
+    box-shadow: 0 4px 12px rgba(27, 38, 59, 0.12);
+}
+
+.notification-content {
+    background: transparent;
+    padding: 6px;
+}
+
+.notification-default-action {
+    margin: 0;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.close-button {
+    background: #B72B3C;
+    color: #FFFFFF;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.close-button:hover {
+    background: #DE6B35;
+    color: #FFFFFF;
+    transition: all 0.15s ease-in-out;
+}
+
+.notification-action {
+    border: 1.5px solid #2E5A88;
+    border-top: none;
+    border-radius: 6px;
+    background: #EAE4D7;
+    color: #1B263B;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    color: #1B263B;
+    background: #E5C178;
+}
+
+.summary {
+    font-size: 16px;
+    font-weight: 800;
+    background: transparent;
+    color: #1B263B;
+    text-shadow: none;
+}
+
+.time {
+    font-size: 13px;
+    font-weight: 700;
+    background: transparent;
+    color: #2E5A88;
+    text-shadow: none;
+    margin-right: 18px;
+}
+
+.body {
+    font-size: 14px;
+    font-weight: 500;
+    background: transparent;
+    color: #3D516C;
+    text-shadow: none;
+}
+
+.widget-title {
+    color: #1B263B;
+    background: #EAE4D7;
+    padding: 6px 12px;
+    margin: 10px 10px 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border-left: 4px solid #B72B3C;
+}
+
+.widget-title > button {
+    font-size: 0.95rem;
+    color: #FFFFFF;
+    background: #B72B3C;
+    border-radius: 6px;
+    padding: 2px 10px;
+}
+
+.widget-title > button:hover {
+    background: #DE6B35;
+    color: #FFFFFF;
+}
+
+.widget-dnd {
+    background: #EAE4D7;
+    padding: 6px 12px;
+    margin: 5px 10px 10px 10px;
+    border-radius: 8px;
+    font-size: large;
+    color: #1B263B;
+    border-left: 4px solid #2E5A88;
+}
+
+.widget-dnd > switch {
+    border-radius: 6px;
+    background: #D5CFC0;
+}
+
+.widget-dnd > switch:checked {
+    background: #B72B3C;
+    border: 1px solid #D3A54F;
+}
+
+.widget-mpris {
+    color: #1B263B;
+    background: #EAE4D7;
+    padding: 6px 10px 0px 10px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.widget-mpris > box > button,
+.widget-mpris-player,
+.widget-mpris-Album-art {
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 5px 10px;
+    margin: 5px 0 0 0;
+}

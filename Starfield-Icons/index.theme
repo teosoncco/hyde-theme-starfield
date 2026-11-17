@@ -1,0 +1,32 @@
+[Icon Theme]
+Name=Starfield-Icons
+Comment=Tela-circle-blue with Deep Vanguard (#1F2C41) dark panel icons and Astra Blue (#2E5A88) folders for Starfield Light Mode
+Inherits=Tela-circle-blue
+Directories=16/panel,16/places,22/panel,24/panel,scalable/places
+
+[16/panel]
+Context=Status
+Size=16
+Type=Fixed
+
+[16/places]
+Context=Places
+Size=16
+Type=Fixed
+
+[22/panel]
+Context=Status
+Size=22
+Type=Fixed
+
+[24/panel]
+Context=Status
+Size=24
+Type=Fixed
+
+[scalable/places]
+Context=Places
+Size=64
+MinSize=16
+MaxSize=512
+Type=Scalable
